@@ -1,0 +1,122 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eaeaea;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+}
+
+body nav {
+    display: block;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 2% 0%;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+nav > a {
+    margin: 0% 2%;
+    font-size: 20px;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "promotion promotion promotion"
+                         "section1 section2 section3";
+   
+}
+
+article:hover {
+    scale: 1.01;
+    box-shadow: 1px 3px 1px 0px gray;
+    transition: 0.5s;
+}
+
+article p {
+    text-align: justify;
+}
+
+.promotion{
+    grid-area: promotion;
+    background-image: url('./Engagement-Rings.png');
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-position-y: 55%; */
+    border-radius: 20px;
+    padding: 1% 2%;
+    color: azure;
+    font-style: italic;
+}
+
+.promotion > p {
+    font-size: medium;
+}
+
+.promotion h2 {
+    font-size: 3.5rem;
+    padding-left: 1%;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.section3 {
+    grid-area: section3;
+}
+
+.section1, .section2, .section3 {
+    padding: 2% 4%;
+    border: 2px solid gray;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
+article > img {
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+footer img {
+    height: 30px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer > div > p {
+    text-align: end;
+}
+
+footer > div > p::before {
+    content: "";
+    display: block;
+    border-bottom: 1.5px solid gray;
+}
